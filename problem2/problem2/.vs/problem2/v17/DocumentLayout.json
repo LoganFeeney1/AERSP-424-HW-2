@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem2\\problem2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A93A58EE-E34E-488E-9196-948741FC963E}|problem2.vcxproj|C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem2\\problem2\\problem2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A93A58EE-E34E-488E-9196-948741FC963E}|problem2.vcxproj|solutionrelative:problem2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "problem2.cpp",
+              "DocumentMoniker": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem2\\problem2\\problem2.cpp",
+              "RelativeDocumentMoniker": "problem2.cpp",
+              "ToolTip": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem2\\problem2\\problem2.cpp",
+              "RelativeToolTip": "problem2.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-27T15:20:12.575Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

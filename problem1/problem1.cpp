@@ -10,6 +10,7 @@ class Sensor {
 public:
     virtual void gatherData() const = 0;
     virtual void processData() const = 0;
+    virtual ~Sensor() {}
 };
 
 // Derived class for temperature sensor
@@ -82,6 +83,14 @@ public:
             sensor->gatherData();
             sensor->processData();
             cout << "Adjusting controls based on sensor data." << endl;
+        }
+    }
+
+    ~AerospaceControlSystem()
+    {
+        for (Sensor* sensor : sensors)
+        {
+            delete sensor;
         }
     }
 };
