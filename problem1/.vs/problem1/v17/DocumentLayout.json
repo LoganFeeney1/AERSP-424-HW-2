@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem1\\",
+  "WorkspaceRootPath": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\for git\\problem1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90B8D7B8-8B3D-4234-B2C3-D7218EA56549}|problem1.vcxproj|C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem1\\problem1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{90B8D7B8-8B3D-4234-B2C3-D7218EA56549}|problem1.vcxproj|C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\for git\\problem1\\problem1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{90B8D7B8-8B3D-4234-B2C3-D7218EA56549}|problem1.vcxproj|solutionrelative:problem1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "problem1.cpp",
-              "DocumentMoniker": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem1\\problem1.cpp",
+              "DocumentMoniker": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\for git\\problem1\\problem1.cpp",
               "RelativeDocumentMoniker": "problem1.cpp",
-              "ToolTip": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\problem1\\problem1.cpp",
+              "ToolTip": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\for git\\problem1\\problem1.cpp",
               "RelativeToolTip": "problem1.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAB5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-27T00:55:04.348Z",
               "EditorCaption": ""
