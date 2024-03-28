@@ -1,9 +1,12 @@
-// problem1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+/************************************************************************************************************************
+Logan Feeney
+Homework 2
+Probem 3
+3/27/24
+************************************************************************************************************************/
 #include <iostream>
 #include <string>
 #include <vector>
-
-using namespace std;
 
 // Abstract base class for sensors
 class Sensor {
@@ -17,11 +20,11 @@ public:
 class TemperatureSensor : public Sensor {
 public:
     void gatherData() const override {
-        cout << "Gathering data from Temperature Sensor." << endl;
+        std::cout << "Gathering data from Temperature Sensor." << std::endl;
     }
 
     void processData() const override {
-        cout << "Processing data from Temperature Sensor." << endl;
+        std::cout << "Processing data from Temperature Sensor." << std::endl;
     }
 };
 
@@ -29,11 +32,11 @@ public:
 class PressureSensor : public Sensor {
 public:
     void gatherData() const override {
-        cout << "Gathering data from Pressure Sensor." << endl;
+        std::cout << "Gathering data from Pressure Sensor." << std::endl;
     }
 
     void processData() const override {
-        cout << "Processing data from Pressure Sensor." << endl;
+        std::cout << "Processing data from Pressure Sensor." << std::endl;
     }
 };
 
@@ -41,18 +44,18 @@ public:
 class PositionSensor : public Sensor {
 public:
     void gatherData() const override {
-        cout << "Gathering data from Position Sensor." << endl;
+        std::cout << "Gathering data from Position Sensor." << std::endl;
     }
 
     void processData() const override {
-        cout << "Processing data from Position Sensor." << endl;
+        std::cout << "Processing data from Position Sensor." << std::endl;
     }
 };
 
 // Factory class to create sensors
 class SensorFactory {
 public:
-    static Sensor* createSensor(const string& sensorType) {
+    static Sensor* createSensor(const std::string& sensorType) {
         if (sensorType == "Temperature") {
             return new TemperatureSensor();
         }
@@ -71,7 +74,7 @@ public:
 // Control system class
 class AerospaceControlSystem {
 private:
-    vector<Sensor*> sensors;
+    std::vector<Sensor*> sensors;
 
 public:
     void addSensor(Sensor* sensor) {
@@ -82,7 +85,7 @@ public:
         for (Sensor* sensor : sensors) {
             sensor->gatherData();
             sensor->processData();
-            cout << "Adjusting controls based on sensor data." << endl;
+            std::cout << "Adjusting controls based on sensor data." << std::endl;
         }
     }
 
