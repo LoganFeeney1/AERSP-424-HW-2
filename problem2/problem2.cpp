@@ -6,94 +6,70 @@ Probem 2
 ************************************************************************************************************************/
 
 #include <iostream>
-#include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
 #include <vector>
-#include <string>
+#include <array>
+
+const int NUM_ROBOTS = 5; // Total number of robots
+const int TOOL_REACH_TIME = 1; // Time taken for each robot to acquire tools
+const int TASK_TIME = 5; // Time taken for each robot to perform the task
+
+struct Robot {
+    int id; // Robot's unique identifier
+    bool hasTool; // Flag to check if the robot has acquired the tools
+};
+
+void processRobots(std::vector<Robot>& robots, const std::array<int, 2>& pair) {
+    // Print "collecting data" messages
+    for (int id : pair) {
+        if (id >= 0) { // Ensure the robot ID is valid
+            std::cout << "Robot " << robots[id].id << " is collecting data." << std::endl;
+            robots[id].hasTool = true;
+        }
+    }
+
+    // No actual delay for acquiring tools, but logic is retained
+    // Print "acquired tools" messages
+    for (int id : pair) {
+        if (id >= 0) {
+            std::cout << "Robot " << robots[id].id << " acquired tools and started performing the task." << std::endl;
+        }
+    }
+
+    // No actual delay for task completion, but logic is retained
+    // Print "finished task" messages
+    for (int id : pair) {
+        if (id >= 0) {
+            robots[id].hasTool = false;
+            std::cout << "Robot " << robots[id].id << " finished the task and returned the tools." << std::endl;
+        }
+    }
+}
+
+int completeTasks(std::vector<Robot>& robots) {
+    int totalTime = 0; // Total time taken for all robots to complete their tasks
+    std::array<std::array<int, 2>, 3> pairs = { {{0, 2}, {1, 3}, {4, -1}} }; // Pairs of robots working together
+
+    // Process each pair of robots
+    for (const auto& pair : pairs) {
+        processRobots(robots, pair);
+        totalTime += TOOL_REACH_TIME + TASK_TIME; // Calculate the total time
+    }
+
+    return totalTime;
+}
 
 int main() {
-    // Initialize an unordered map to track the time each robot starts a task
-    std::unordered_map<std::string, int> started;
+    std::vector<Robot> robots(NUM_ROBOTS); // Initialize the robots
 
-    // Initialize an unordered set to keep track of visited robots
-    std::unordered_set<std::string> visited;
-
-    // Initialize a vector to keep track of robots that have started a task
-    std::vector<std::string> startedArray;
-
-    // Initialize a variable to track the total time in seconds
-    int seconds = 0;
-
-    // Create a vector of robot names
-    std::vector<std::string> robots = { "robot 0", "robot 1", "robot 2", "robot 3", "robot 4" };
-
-    // Loop until all robots have completed their tasks
-    while (visited.size() < 5) {
-        // Increment the time for each robot that has started a task
-        for (auto& pair : started) {
-            pair.second++;
-            // If a robot has just started a task, print a message
-            if (pair.second == 1) {
-                std::cout << pair.first << " acquired tools and starts performing a task" << std::endl;
-            }
-        }
-
-        // Create a copy of the startedArray vector
-        std::vector<std::string> startedArrayCopy = startedArray;
-
-        // Iterate through the robots vector
-        for (size_t i = 0; i < robots.size(); ++i) {
-            const std::string& robot = robots[i];
-            // Check if the robot has completed its task
-            if (started.find(robot) != started.end() && started[robot] == 6) {
-                // Print a message when the robot finishes the task
-                std::cout << robot << " finished the task and returning the tools" << std::endl;
-                // Remove the robot from the started map and robots vector
-                started.erase(robot);
-                auto it = std::find(robots.begin(), robots.end(), robot);
-                robots.erase(it);
-                // Determine the index of the previous robot in the circular arrangement
-                size_t prev_index = (i == 0) ? robots.size() - 1 : i - 1;
-                // If the previous robot has not been visited, mark it as visited and start its task
-                if (visited.find(robots[prev_index]) == visited.end()) {
-                    visited.insert(robots[prev_index]);
-                    started[robots[prev_index]] = 0;
-                    startedArray.push_back(robots[prev_index]);
-                    std::cout << robots[prev_index] << " is collecting data" << std::endl;
-                }
-            }
-        }
-
-        // Iterate through the robots vector again
-        for (size_t i = 0; i < robots.size(); ++i) {
-            const std::string& robot = robots[i];
-            // Check if the robot has not been visited and has not started a task
-            if (visited.find(robot) == visited.end() && started.find(robot) == started.end()) {
-                // Determine the index of the previous and next robots in the circular arrangement
-                size_t prev_index = (i == 0) ? robots.size() - 1 : i - 1;
-                size_t next_index = (i == robots.size() - 1) ? 0 : i + 1;
-                // If the previous robot has not been visited and the next robot has not started a task
-                if (visited.find(robots[prev_index]) == visited.end() && started.find(robots[next_index]) == started.end()) {
-                    // Mark the robot as visited, start its task, and add it to the startedArray vector
-                    visited.insert(robot);
-                    started[robot] = 0;
-                    startedArray.push_back(robot);
-                    std::cout << robot << " is collecting data" << std::endl;
-                }
-            }
-        }
-        // Increment the seconds counter
-        seconds++;
+    // Assign IDs and set tool flag to false
+    for (int i = 0; i < NUM_ROBOTS; ++i) {
+        robots[i].id = i;
+        robots[i].hasTool = false;
     }
 
-    // Print messages for robots that are still performing tasks when all others have finished
-    for (const auto& pair : started) {
-        std::cout << pair.first << " acquired tools and starts performing a task" << std::endl;
-        std::cout << pair.first << " finished the task and returning the tools" << std::endl;
-    }
-    // Print the total duration in seconds
-    std::cout << "total duration: " << seconds << " seconds" << std::endl;
-
+    // Complete tasks and calculate total time
+    int totalTime = completeTasks(robots);
+    std::cout << "Total time for all robots to complete their tasks: " << totalTime << " seconds" << std::endl;
     return 0;
 }
+
