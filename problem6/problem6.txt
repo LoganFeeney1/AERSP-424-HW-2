@@ -9,4 +9,10 @@ will be a potential solution for the issues?
 
 Answer:
 
-An issue that could occur if actions like waking up the ATC controller, checking the air traffic pattern, and landing all take actual time to complete are concurrency issues. An example would be two aircraft checking to see if the air traffic pattern is clear. They could see that the pattern is not full and both decided to land, exceeding the maximum allowed. A potential solution to this issue is threading and using a different thread to handle tasks like landing and managing air traffic patterns.
+An issue that could occur if actions like waking up the ATC controller, checking
+the air traffic pattern, and landing all take actual time to complete are 
+concurrency issues. An example would be two aircraft checking to see if the air 
+traffic pattern is clear. They could see that the pattern is not full and both 
+decided to land, exceeding the maximum allowed. A potential solution to this issue 
+is threading and using a different thread to handle tasks like landing and managing 
+air traffic patterns.
