@@ -56,7 +56,7 @@ int main()
     process_landing(2);  // Aircraft 2 requests to land
     clear_landing();     // Clear Aircraft 2 to land
 
-    // Define and process simultaneous arrival of aircraft 4, 6, 8, 9, 7, 0, 3, 5
+    // Define and process simultaneous arrival of aircraft
     int simultaneousAircraft[] = { 4, 6, 8, 9, 7, 0, 3, 5 };  // Array of aircraft numbers arriving simultaneously
     for (int aircraft : simultaneousAircraft) 
     {  // Loop through the array of simultaneously arriving aircraft
