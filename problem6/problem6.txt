@@ -1,0 +1,12 @@
+Question 6 (5 points):
+
+From Question3, what issues you might obtain during the development of
+the program? What issues do you think will happen if some of the actions,
+e.g., waking up the ATC, checking the traffic pattern, entering the traffic
+pattern, diverging to another airport, etc., take time to finish? And what
+will be a potential solution for the issues? 
+
+
+Answer:
+
+An issue that could occur if actions like waking up the ATC controller, checking the air traffic pattern, and landing all take actual time to complete are concurrency issues. An example would be two aircraft checking to see if the air traffic pattern is clear. They could see that the pattern is not full and both decided to land, exceeding the maximum allowed. A potential solution to this issue is threading and using a different thread to handle tasks like landing and managing air traffic patterns.

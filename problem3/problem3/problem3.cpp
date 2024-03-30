@@ -6,53 +6,66 @@ Probem 3
 ************************************************************************************************************************/
 
 #include <iostream>
-#include <vector>
-#include <thread>
-#include <chrono>
+#include <string>    
+#include <queue>     
 
-void request_landing(int aircraft_number)
+using namespace std;
+
+// Global variables
+queue<int> landingQueue;  // Queue to hold the order of aircraft waiting to land
+int patternCount = 0;     // Counter for the number of aircraft currently in the traffic pattern
+int landedCount = 0;      // Counter for the number of aircraft that have landed
+const int maxPattern = 3; // Maximum number of aircraft allowed in the traffic pattern at once
+
+// Function to process landing requests
+void process_landing(int aircraftNumber) 
 {
-    std::cout << "Aircraft " << aircraft_number << " is requesting to land." << std::endl;
-}
-
-void cleared_landing(int aircraft_number)
-{
-    std::cout << "Aircraft " << aircraft_number << " is cleared to land." << std::endl;
-}
-
-void runway_clear()
-{
-    std::cout << "Runway is clear." << std::endl;
-}
-
-void redirect_to_other_airport(int aircraft_number)
-{
-    std::cout << "The approach pattern is full. Aircraft " << aircraft_number << " is redirected to another airport." << std::endl;
-}
-
-int main()
-{
-    std::vector<int>aircraft_in_queue = { 1,2,4,6,8,9,7,0,3,5 };  //update order of aircraft
-
-    for (int aircraft_number : aircraft_in_queue)
+    cout << "Aircraft #" << aircraftNumber << " requesting landing." << endl;  // Output landing request message
+    if (patternCount < maxPattern) 
+    {  // Check if the traffic pattern can accommodate more aircraft
+        patternCount++;               // Increment the pattern counter
+        landingQueue.push(aircraftNumber);  // Add the aircraft to the landing queue
+    }
+    else 
     {
-        if (aircraft_number == 9 || aircraft_number == 7 || aircraft_number == 0 || aircraft_number == 3 || aircraft_number == 5)
-        {
-            request_landing(aircraft_number);
-        }
-        else
-        {
-            redirect_to_other_airport(aircraft_number);
-            cleared_landing(aircraft_number);
-            runway_clear();
+        // Output messages if the traffic pattern is full and redirect the aircraft
+        cout << "Approach pattern is full. Aircraft #" << aircraftNumber << " redirected to another airport." << endl;
+        cout << "Aircraft #" << aircraftNumber << " flying to another airport." << endl;
+    }
+}
 
-            std::this_thread::sleep_for(std::chrono::seconds(1));
-        }
+// Function to clear aircraft for landing
+void clear_landing() 
+{
+    while (!landingQueue.empty() && patternCount > 0) 
+    {  // Loop while the queue is not empty and the pattern is not full
+        int aircraftNumber = landingQueue.front();  // Get the number of the next aircraft to land
+        landingQueue.pop();                         // Remove the aircraft from the queue
+        cout << "Aircraft #" << aircraftNumber << " is cleared to land." << endl;  // Output clearance message
+        cout << "Runway is now free." << endl;  // Output runway clearance message
+        patternCount--;  // Decrement the pattern counter as the aircraft has landed
+        landedCount++;   // Increment the landed aircraft counter
+    }
+}
+
+int main() 
+{
+    // Process landing for Aircraft 1 and 2 individually
+    process_landing(1);  // Aircraft 1 requests to land
+    clear_landing();     // Clear Aircraft 1 to land
+    process_landing(2);  // Aircraft 2 requests to land
+    clear_landing();     // Clear Aircraft 2 to land
+
+    // Define and process simultaneous arrival of aircraft 4, 6, 8, 9, 7, 0, 3, 5
+    int simultaneousAircraft[] = { 4, 6, 8, 9, 7, 0, 3, 5 };  // Array of aircraft numbers arriving simultaneously
+    for (int aircraft : simultaneousAircraft) 
+    {  // Loop through the array of simultaneously arriving aircraft
+        process_landing(aircraft);  // Each aircraft in the array requests to land
     }
 
-    int total_duration = aircraft_in_queue.size();
+    clear_landing();  // Clear any remaining aircraft in the queue to land
 
-    std::cout << "Total duration: " << total_duration - 5 << " seconds" << std::endl;
+    cout << "Total duration: " << landedCount << " seconds." << endl;  // Output the total duration of landings
 
     return 0;
 }
