@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-src/CMakeLists.txt
+  glew.c
+     Creating library D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-build/lib/Debug/glew-sharedd.lib and object D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-build/lib/Debug/glew-sharedd.exp
+  libglew_shared.vcxproj -> D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-build\bin\Debug\glew-sharedd.dll

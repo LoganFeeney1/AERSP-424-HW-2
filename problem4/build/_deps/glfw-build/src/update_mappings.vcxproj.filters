@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\CMakeFiles\88bc081a94d04f6eae5ca15b2fdfc118\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-src\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-src\CMake\GenerateMappings.cmake" />
+    <None Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D223BC30-B3A8-3EDD-BF47-DE70D2C8455C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5C186A34-320F-3983-8227-E6571EBEE195}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

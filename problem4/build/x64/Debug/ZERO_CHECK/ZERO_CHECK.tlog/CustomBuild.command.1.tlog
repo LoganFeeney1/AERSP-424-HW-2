@@ -1,0 +1,10 @@
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\CMAKEFILES\804B7F492265CE4F6390498ABFEF67D1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AERSP 424/424 Homework 2/problem4" "-BD:/AERSP 424/424 Homework 2/problem4/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/AERSP 424/424 Homework 2/problem4/build/OpenGLExample.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

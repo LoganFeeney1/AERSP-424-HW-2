@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\0b54cfe6ca74628e1be7379f92ef0d85\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\3be6d3a6d46e0fb50fc5806d9368cf89\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\eb79e512cf2b298e9ebe8520f796ffca\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\AERSP 424\424 Homework 2\problem4\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B4A1080C-9118-3513-99AF-49FBB0D4D546}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

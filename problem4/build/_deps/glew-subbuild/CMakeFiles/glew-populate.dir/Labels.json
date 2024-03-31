@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/glew-populate"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/ba455861baffebbb63222c11489d9a07/glew-populate.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/01d2576ee7470e5ce9e5f6591ec50fc1/glew-populate-complete.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-build.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-configure.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-download.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-install.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-patch.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-test.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/577aaadbc24b03d759d25b9b6ce4060a/glew-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glew-populate"
+		],
+		"name" : "glew-populate"
+	}
+}

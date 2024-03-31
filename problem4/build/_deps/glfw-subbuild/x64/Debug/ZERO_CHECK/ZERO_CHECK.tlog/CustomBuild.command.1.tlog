@@ -1,0 +1,10 @@
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\EB79E512CF2B298E9EBE8520F796FFCA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild" "-BD:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/glfw-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

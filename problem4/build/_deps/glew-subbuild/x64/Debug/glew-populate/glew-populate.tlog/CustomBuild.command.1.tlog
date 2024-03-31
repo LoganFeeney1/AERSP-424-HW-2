@@ -1,0 +1,150 @@
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-UPDATE.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-src"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -P "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-CONFIGURE.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-BUILD.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-INSTALL.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\577AAADBC24B03D759D25B9B6CE4060A\GLEW-POPULATE-TEST.RULE
+setlocal
+cd "D:\AERSP 424\424 Homework 2\problem4\build\_deps\glew-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\01D2576EE7470E5CE9E5F6591EC50FC1\GLEW-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/Debug/glew-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\BA455861BAFFEBBB63222C11489D9A07\GLEW-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild" "-BD:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild" --check-stamp-file "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glew-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

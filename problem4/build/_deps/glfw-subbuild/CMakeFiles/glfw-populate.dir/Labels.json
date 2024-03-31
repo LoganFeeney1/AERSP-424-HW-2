@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/eb79e512cf2b298e9ebe8520f796ffca/glfw-populate.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/3be6d3a6d46e0fb50fc5806d9368cf89/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-build.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-download.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-install.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-test.rule"
+		},
+		{
+			"file" : "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/0b54cfe6ca74628e1be7379f92ef0d85/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

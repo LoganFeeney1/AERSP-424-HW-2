@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\AERSP 424\424 Homework 2\problem4\build\CMakeFiles\67da346796d085d14f4459119c88c3b3\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D223BC30-B3A8-3EDD-BF47-DE70D2C8455C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

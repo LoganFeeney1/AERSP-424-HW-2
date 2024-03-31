@@ -1,0 +1,10 @@
+^D:\AERSP 424\424 HOMEWORK 2\PROBLEM4\BUILD\_DEPS\GLFW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild" "-BD:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild" --check-stamp-file "D:/AERSP 424/424 Homework 2/problem4/build/_deps/glfw-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
