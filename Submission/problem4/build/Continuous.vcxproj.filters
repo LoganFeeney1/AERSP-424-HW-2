@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\build\CMakeFiles\0d845ea905bb67c2578e6cf2e4d7b64e\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\build\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F7F74E6F-19C4-3E2E-8508-46DFD3B77098}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

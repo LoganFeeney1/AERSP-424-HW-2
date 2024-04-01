@@ -1,0 +1,16 @@
+﻿  problem4.cpp
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(46,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(46,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(47,26): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(48,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(48,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(49,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(58,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(59,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(60,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(63,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(66,51): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(68,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(69,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\problem4.cpp(70,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  problem4.vcxproj -> C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\build\Debug\problem4.exe

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "problem1.dir\\Debug\\problem1.obj",
+            "outputs": [
+                "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem1\\build\\problem1.dir\\Debug\\vc143.pdb",
+                "problem1.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

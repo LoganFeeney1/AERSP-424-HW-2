@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\build\_deps\glew-subbuild\CMakeFiles\34117adfd443fbe48e7db77ebb8bca3e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8AAC039E-3665-3D2D-A601-68EAE59E2533}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

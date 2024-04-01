@@ -1,0 +1,10 @@
+^C:\USERS\LOGAN\ONEDRIVE\DOCUMENTS\PSU NOTES\AERSP 424\HOMEWORK 2\SUBMISSION\PROBLEM4\BUILD\_DEPS\GLEW-SUBBUILD\CMAKEFILES\34117ADFD443FBE48E7DB77EBB8BCA3E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glew-subbuild" "-BC:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glew-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glew-subbuild/glew-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
