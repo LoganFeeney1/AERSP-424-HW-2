@@ -1,12 +1,40 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem2\\build\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem2\\build\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7450FE20-D9E8-3BB4-97D4-A0160767D009}|problem2.vcxproj|D:\\AERSP 424\\424 Homework 2\\Submission\\problem2\\problem2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "problem2.cpp",
+              "DocumentMoniker": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem2\\problem2.cpp",
+              "RelativeDocumentMoniker": "..\\problem2.cpp",
+              "ToolTip": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem2\\problem2.cpp",
+              "RelativeToolTip": "..\\problem2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T04:24:20.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
