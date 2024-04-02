@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4
+# Install script for directory: D:/AERSP 424/424 Homework 2/Submission/problem4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glfw-build/cmake_install.cmake")
+  include("D:/AERSP 424/424 Homework 2/Submission/problem4/build/_deps/glfw-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glew-build/cmake_install.cmake")
+  include("D:/AERSP 424/424 Homework 2/Submission/problem4/build/_deps/glew-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/AERSP 424/424 Homework 2/Submission/problem4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

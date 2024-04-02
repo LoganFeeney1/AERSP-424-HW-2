@@ -9,10 +9,4 @@ will be a potential solution for the issues?
 
 Answer:
 
-An issue that could occur if actions like waking up the ATC controller, checking
-the air traffic pattern, and landing all take actual time to complete are 
-concurrency issues. An example would be two aircraft checking to see if the air 
-traffic pattern is clear. They could see that the pattern is not full and both 
-decided to land, exceeding the maximum allowed. A potential solution to this issue 
-is threading and using a different thread to handle tasks like landing and managing 
-air traffic patterns.
+One issue that could occur, especially with the multithreaded system, could be the occurance of race conditions when multiple threads try to access data concurrently and alters the sequence of execution in the program. I personally ran into this problem while working with problem 3. the solution to this is to incorperate locks and mutexes to limit only one thread to modify or access shared data at a single time. Talking about locks, there are also the issues of deadlocks where certain threads are waiting to access a resource but a different thread is holding the resource and essentially blocking the rest from access the data. This can be corrected through program design and implentation of lock ordering in addition to unlocking a resource once a thread has finished with it.

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem3\\build\\",
+  "WorkspaceRootPath": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem3\\build\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2613EC0F-D389-355E-87FE-ED55C5DCAF0E}|problem3.vcxproj|C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem3\\problem3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E6F4CB05-4BA4-3F63-AB47-6228DEBDF6F2}|problem3.vcxproj|D:\\AERSP 424\\424 Homework 2\\Submission\\problem3\\problem3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,19 +13,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "problem3.cpp",
-              "DocumentMoniker": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem3\\problem3.cpp",
+              "DocumentMoniker": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem3\\problem3.cpp",
               "RelativeDocumentMoniker": "..\\problem3.cpp",
-              "ToolTip": "C:\\Users\\Logan\\OneDrive\\Documents\\PSU Notes\\AERSP 424\\Homework 2\\Submission\\problem3\\problem3.cpp",
+              "ToolTip": "D:\\AERSP 424\\424 Homework 2\\Submission\\problem3\\problem3.cpp",
               "RelativeToolTip": "..\\problem3.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-02T17:05:39.658Z",
+              "WhenOpened": "2024-04-02T22:30:58.87Z",
               "EditorCaption": ""
             }
           ]

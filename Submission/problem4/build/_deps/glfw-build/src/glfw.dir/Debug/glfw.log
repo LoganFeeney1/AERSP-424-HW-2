@@ -1,4 +1,4 @@
-﻿  Building Custom Rule C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glfw-src/src/CMakeLists.txt
+﻿  Building Custom Rule D:/AERSP 424/424 Homework 2/Submission/problem4/build/_deps/glfw-src/src/CMakeLists.txt
   context.c
   init.c
   input.c
@@ -23,4 +23,4 @@
   Compiling...
   wgl_context.c
   Generating Code...
-  glfw.vcxproj -> C:\Users\Logan\OneDrive\Documents\PSU Notes\AERSP 424\Homework 2\Submission\problem4\build\_deps\glfw-build\src\Debug\glfw3.lib
+  glfw.vcxproj -> D:\AERSP 424\424 Homework 2\Submission\problem4\build\_deps\glfw-build\src\Debug\glfw3.lib

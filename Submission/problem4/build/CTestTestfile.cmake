@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4
-# Build directory: C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build
+# Source directory: D:/AERSP 424/424 Homework 2/Submission/problem4
+# Build directory: D:/AERSP 424/424 Homework 2/Submission/problem4/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

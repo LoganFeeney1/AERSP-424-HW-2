@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem4/build/_deps/glfw-src/src
+# Install script for directory: D:/AERSP 424/424 Homework 2/Submission/problem4/build/_deps/glfw-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

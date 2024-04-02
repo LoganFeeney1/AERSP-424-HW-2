@@ -16,4 +16,9 @@ due to the absence of specific ending conditions or termination criteria.
 To address this issue, there needs to be definite completion or stopping 
 criteria for the program, such as a predefined number of tasks, a maximum 
 duration, or other logical endpoints, to avoid infinite loops and terminate 
-the program without requiring user input.
+the program without requiring user input. there is also the issue of resource
+contention meaning that if multiple robots try to use the same shared resouce
+(like the tools in problem 2) and a robot is immediately assigned a task after
+completing its previous task, there may be delays in the program. This can
+be fixed by program design and ensuring that the program manages resource 
+allocation via queueing tasks or scheduling.
