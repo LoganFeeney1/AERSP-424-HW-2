@@ -1,6 +1,6 @@
-^D:\AERSP 424\424 HOMEWORK 2\SUBMISSION\PROBLEM2\BUILD\CMAKEFILES\177BD4ABBA30A415CAF401ADE114A96F\GENERATE.STAMP.RULE
+^C:\USERS\LOGAN\ONEDRIVE\DOCUMENTS\PSU NOTES\AERSP 424\HOMEWORK 2\SUBMISSION\PROBLEM2\BUILD\CMAKEFILES\FBBC21BA5794D7CA3A5E67AFB76236A9\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AERSP 424/424 Homework 2/Submission/problem2" "-BD:/AERSP 424/424 Homework 2/Submission/problem2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/AERSP 424/424 Homework 2/Submission/problem2/build/problem2.sln"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem2" "-BC:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Logan/OneDrive/Documents/PSU Notes/AERSP 424/Homework 2/Submission/problem2/build/problem2.sln"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

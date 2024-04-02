@@ -6,66 +6,94 @@ Probem 3
 ************************************************************************************************************************/
 
 #include <iostream>
-#include <string>    
-#include <queue>     
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <vector>
+#include <queue>
 
 using namespace std;
 
-// Global variables
-queue<int> landingQueue;  // Queue to hold the order of aircraft waiting to land
-int patternCount = 0;     // Counter for the number of aircraft currently in the traffic pattern
-int landedCount = 0;      // Counter for the number of aircraft that have landed
-const int maxPattern = 3; // Maximum number of aircraft allowed in the traffic pattern at once
+// Declare global variables and synchronization primitives
+mutex mtx;  // Mutex for synchronizing access to shared resources
+condition_variable cv;  // Condition variable for managing landing queue
+queue<int> landingQueue;  // Queue to keep track of aircraft waiting to land
+int currentPattern = 0;  // Current number of aircraft in the landing pattern
+const int maxPattern = 3;  // Maximum allowed aircraft in the landing pattern
+int timeSeconds = 0;  // Simulation time in seconds
 
-// Function to process landing requests
-void process_landing(int aircraftNumber) 
-{
-    cout << "Aircraft #" << aircraftNumber << " requesting landing." << endl;  // Output landing request message
-    if (patternCount < maxPattern) 
-    {  // Check if the traffic pattern can accommodate more aircraft
-        patternCount++;               // Increment the pattern counter
-        landingQueue.push(aircraftNumber);  // Add the aircraft to the landing queue
-    }
-    else 
-    {
-        // Output messages if the traffic pattern is full and redirect the aircraft
-        cout << "Approach pattern is full. Aircraft #" << aircraftNumber << " redirected to another airport." << endl;
-        cout << "Aircraft #" << aircraftNumber << " flying to another airport." << endl;
-    }
-}
+// Function for aircraft requesting to land
+void request_landing(int id) {
+    unique_lock<mutex> lock(mtx);  // Lock the mutex for thread-safe access
+    cout << "Aircraft #" << id << " requesting landing." << endl;
 
-// Function to clear aircraft for landing
-void clear_landing() 
-{
-    while (!landingQueue.empty() && patternCount > 0) 
-    {  // Loop while the queue is not empty and the pattern is not full
-        int aircraftNumber = landingQueue.front();  // Get the number of the next aircraft to land
-        landingQueue.pop();                         // Remove the aircraft from the queue
-        cout << "Aircraft #" << aircraftNumber << " is cleared to land." << endl;  // Output clearance message
-        cout << "Runway is now free." << endl;  // Output runway clearance message
-        patternCount--;  // Decrement the pattern counter as the aircraft has landed
-        landedCount++;   // Increment the landed aircraft counter
+    // Check if the landing pattern can accommodate the aircraft
+    if (currentPattern < maxPattern) {
+        currentPattern++;  // Increase the count of aircraft in the pattern
+        landingQueue.push(id);  // Add the aircraft to the landing queue
+        cv.notify_one();  // Notify the ATC thread if it's waiting for aircraft
+    }
+    else {
+        // If the pattern is full, redirect the aircraft to another airport
+        cout << "Approach pattern is full. Aircraft #" << id << " redirected to another airport." << endl;
+        cout << "Aircraft #" << id << " flying to another airport." << endl;
     }
 }
 
-int main() 
-{
-    // Process landing for Aircraft 1 and 2 individually
-    process_landing(1);  // Aircraft 1 requests to land
-    clear_landing();     // Clear Aircraft 1 to land
-    process_landing(2);  // Aircraft 2 requests to land
-    clear_landing();     // Clear Aircraft 2 to land
+// ATC (Air Traffic Controller) function to manage aircraft landing
+void atc_function() {
+    unique_lock<mutex> lock(mtx);  // Lock the mutex for thread-safe access
 
-    // Define and process simultaneous arrival of aircraft
-    int simultaneousAircraft[] = { 4, 6, 8, 9, 7, 0, 3, 5 };  // Array of aircraft numbers arriving simultaneously
-    for (int aircraft : simultaneousAircraft) 
-    {  // Loop through the array of simultaneously arriving aircraft
-        process_landing(aircraft);  // Each aircraft in the array requests to land
+    // Continue the simulation until the specified time is reached
+    while (timeSeconds < 5) {
+        // Wait for an aircraft to be added to the landing queue
+        cv.wait(lock, [] { return !landingQueue.empty(); });
+
+        // Exit if the simulation time has reached its limit
+        if (timeSeconds >= 5) {
+            break;
+        }
+
+        // Clear aircraft to land as long as there are aircraft in the queue and time allows
+        while (!landingQueue.empty() && timeSeconds < 5) {
+            int aircraftId = landingQueue.front();  // Get the ID of the next aircraft
+            landingQueue.pop();  // Remove the aircraft from the queue
+            cout << "Aircraft #" << aircraftId << " is cleared to land." << endl;
+            currentPattern--;  // Decrease the count of aircraft in the pattern
+            timeSeconds++;  // Increment the simulation time
+            cout << "Runway is now free." << endl;
+            this_thread::sleep_for(chrono::seconds(1));  // Simulate the time it takes to land
+        }
+    }
+}
+
+int main() {
+    vector<thread> aircraftThreads;  // Vector to store aircraft threads
+
+    // Process the first two aircraft requests exclusively
+    aircraftThreads.push_back(thread(request_landing, 0));
+    aircraftThreads.push_back(thread(request_landing, 1));
+    aircraftThreads[0].join();  // Wait for the first aircraft thread to complete
+    aircraftThreads[1].join();  // Wait for the second aircraft thread to complete
+
+    // Start the ATC thread to manage the landing pattern
+    thread atcThread(atc_function);
+
+    // Create and start threads for the remaining aircraft
+    for (int i = 2; i < 10; ++i) {
+        aircraftThreads.push_back(thread(request_landing, i));
     }
 
-    clear_landing();  // Clear any remaining aircraft in the queue to land
+    // Wait for all remaining aircraft threads to complete
+    for (size_t i = 2; i < aircraftThreads.size(); ++i) {
+        if (aircraftThreads[i].joinable()) {
+            aircraftThreads[i].join();
+        }
+    }
 
-    cout << "Total duration: " << landedCount << " seconds." << endl;  // Output the total duration of landings
+    atcThread.join();  // Wait for the ATC thread to complete
+
+    cout << "Duration: " << timeSeconds << " seconds." << endl;  // Print the total simulation time
 
     return 0;
 }
